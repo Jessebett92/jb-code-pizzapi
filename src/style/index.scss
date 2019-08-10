@@ -16,6 +16,8 @@ body {
       .components-to-render {
         width: 100%;
         height: 100%;
+        display: flex;
+        justify-content: center;
       }
     }
   }
