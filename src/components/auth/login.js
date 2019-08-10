@@ -41,10 +41,13 @@ class Login extends React.Component {
 
   render() {
     return (
-      <div className="login-wrapper">
-        <div className="login-component">
-          <div className="login-heading">
-            <h1>Order Your Pizza Through the Power of Cookies!</h1>
+      <div className="login-component">
+        <div className="login-heading">
+          <h1>Order Your Pizza With the Power of Cookies!</h1>
+        </div>
+        <div className="login-grid-columns">
+          <div className="login-description">
+            <p>Fill in your info, and it will be stored as a cookie</p>
           </div>
           <div className="login-form">
             <form onSubmit={this.handleSubmit}>
@@ -112,8 +115,9 @@ class Login extends React.Component {
                 onChange={this.handleChange}
                 name="zip"
                 id="zip"
-                type="text"
+                type="number"
                 value={this.state.zip}
+                pattern="(\d{5}([\-]\d{4})?)"
                 required
               />
 
@@ -122,8 +126,9 @@ class Login extends React.Component {
                 onChange={this.handleChange}
                 name="phone"
                 id="phone"
-                type="text"
+                type="tel"
                 value={this.state.phone}
+                pattern="\d{3}[\-]\d{3}[\-]\d{4}"
                 required
               />
 

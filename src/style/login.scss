@@ -1,0 +1,40 @@
+.login-component {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  .login-heading {
+    text-align: center;
+  }
+
+  .login-grid-columns {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-gap: 10em;
+    height: 100%;
+    padding: 5em;
+    border: 1px solid white;
+
+    .login-description {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+    }
+
+    .login-form {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 100%;
+
+      form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        height: 100%;
+      }
+    }
+  }
+}

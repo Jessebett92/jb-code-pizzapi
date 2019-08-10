@@ -38,7 +38,7 @@ export default class App extends Component {
     return (
       <div className="app">
         <Router>
-          <div>
+          <div className="components-to-render">
             <Switch>
               <Route
                 exact
